@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RoniliNailAndArt</string>
+    <string name="home">בית</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ronili_dahan_nail_amp_art"><![CDATA[Ronili Dahan - Nail & Art]]></string>
+    <string name="services">לק ג׳ל, מניקור רוסי, מניקור ידני, מניקור משולב, מבנה אנטומי, מילוי בג׳ל, בניית ציפורן, השלמת ציפורן, ציורים וקישוטים, עיצוב גבות, צביעת גבות, שפם בחוט.</string>
+</resources>

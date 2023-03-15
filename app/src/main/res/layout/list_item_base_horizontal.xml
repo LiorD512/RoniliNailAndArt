@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:paddingVertical="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/baseHorizontalTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Reg14White"
+        android:layout_weight="1"
+        tools:text="מניקור רוסי"/>
+
+    <TextView
+        android:id="@+id/baseHorizontalSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Reg14White"
+        android:layout_weight="1"
+        tools:text="120 ש״ח"/>
+
+    <TextView
+        android:id="@+id/baseHorizontalSecondSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/Reg14White"
+        android:layout_weight="1"
+        tools:text="120 ש״ח"/>
+
+</LinearLayout>

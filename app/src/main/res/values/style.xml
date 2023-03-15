@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Bold12White">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Bold14White">
+        <item name="android:fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Reg12White">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Reg14White">
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Titles">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:layout_marginTop">25dp</item>
+    </style>
+
+    <style name="InfoText">
+        <item name="fontFamily">@font/lato_light</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingHorizontal">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+</resources>

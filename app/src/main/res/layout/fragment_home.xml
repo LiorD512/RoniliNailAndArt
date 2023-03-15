@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".features.main.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="120dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/homeFragmentBtn">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="35dp"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/homeFragImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:iss_auto_cycle="true"
+                app:iss_period="3000"
+                app:iss_selected_dot="@drawable/default_selected_dot"
+                app:iss_text_align="CENTER"
+                app:iss_unselected_dot="@drawable/default_unselected_dot"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/homeFragmentImage"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:src="@drawable/app_logo"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeFragImageSlider" />
+
+            <TextView
+                android:id="@+id/homeFragmentTitle"
+                style="@style/Titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ronili_dahan_nail_amp_art"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeFragmentImage" />
+
+            <TextView
+                android:id="@+id/homeFragmentServices"
+                style="@style/InfoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingHorizontal="25dp"
+                android:text="@string/services"
+                app:layout_constraintTop_toBottomOf="@id/homeFragmentTitle" />
+
+            <ImageView
+                android:id="@+id/homeFragmentFacebookLogo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/facebook_logo"
+                app:layout_constraintEnd_toStartOf="@id/homeFragmentInstagramLogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintTop_toBottomOf="@id/homeFragmentServices" />
+
+            <ImageView
+                android:id="@+id/homeFragmentInstagramLogo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/instagram_logo"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/homeFragmentFacebookLogo"
+                app:layout_constraintEnd_toStartOf="@id/homeFragmentWhatsappLogo"
+                app:layout_constraintStart_toEndOf="@id/homeFragmentFacebookLogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeFragmentServices"
+                app:layout_constraintTop_toTopOf="@id/homeFragmentFacebookLogo" />
+
+            <ImageView
+                android:id="@+id/homeFragmentWhatsappLogo"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:src="@drawable/whatsapp_logo"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/homeFragmentFacebookLogo"
+                app:layout_constraintEnd_toStartOf="@id/homeFragmentWazeLogo"
+                app:layout_constraintStart_toEndOf="@id/homeFragmentInstagramLogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeFragmentServices"
+                app:layout_constraintTop_toTopOf="@id/homeFragmentFacebookLogo" />
+
+            <ImageView
+                android:id="@+id/homeFragmentWazeLogo"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:src="@drawable/waze_logo"
+                app:layout_constraintBottom_toBottomOf="@id/homeFragmentFacebookLogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/homeFragmentWhatsappLogo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeFragmentServices"
+                app:layout_constraintTop_toTopOf="@id/homeFragmentFacebookLogo" />
+
+            <TextView
+                android:id="@+id/fragmentHomeWorkingHoursTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Titles"
+                android:text="שעות פעילות:"
+                app:layout_constraintTop_toBottomOf="@id/homeFragmentFacebookLogo"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragmentHomeWorkingHoursRv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/fragmentHomeWorkingHoursTitle"
+                android:paddingHorizontal="25dp"
+                android:paddingTop="15dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.liordahan.ronilinailandart.views.PrimaryButton
+        android:id="@+id/homeFragmentBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp"
+        app:title="לקביעת תור" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

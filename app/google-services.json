@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "27064407328",
+    "project_id": "ronilinailandart",
+    "storage_bucket": "ronilinailandart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27064407328:android:60c4b25608c6b2595b7345",
+        "android_client_info": {
+          "package_name": "com.liordahan.ronilinailandart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27064407328-i42qlfj85amla03r66rdpmpre84a572f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.liordahan.ronilinailandart",
+            "certificate_hash": "22717b2e9339624573005cf9dc2b6257412d79fd"
+          }
+        },
+        {
+          "client_id": "27064407328-uth5lmbmkdc9fjlkp7tuufreqjcn91lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvLPP_kSgfz1o1hn6xAtrNe1QhjFmM_0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27064407328-uth5lmbmkdc9fjlkp7tuufreqjcn91lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/transparent"
+    android:layoutDirection="rtl"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:layoutDirection="rtl">
+
+        <TextView
+            android:id="@+id/listItemServiceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="15dp"
+            style="@style/Bold14White"
+            tools:text="מניקור" />
+
+        <ImageView
+            android:id="@+id/listItemServiceArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_forward_24"
+            app:layout_constraintTop_toTopOf="@id/listItemServiceName"
+            app:layout_constraintBottom_toBottomOf="@id/listItemServiceName"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingHorizontal="15dp"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/listItemServiceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/listItemServiceName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            tools:text="שעה ו-30 דקות"
+            android:gravity="center"
+            android:layout_marginEnd="15dp"
+            android:drawablePadding="8dp"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:drawableStartCompat="@drawable/baseline_access_time_24"
+            app:drawableTint="@color/white" />
+
+        <TextView
+            android:id="@+id/listItemServiceMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/listItemServiceTime"
+            app:layout_constraintBottom_toBottomOf="@id/listItemServiceTime"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="שעה ו-30 דקות"
+            android:gravity="center"
+            android:drawablePadding="8dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.liordahan.ronilinailandart.features.main.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/toServiceAndPricing"
+            app:destination="@id/serviceAndPricing"
+            app:enterAnim="@anim/slide_left_enter"
+            app:exitAnim="@anim/slide_left_exit"
+            app:popEnterAnim="@anim/slide_right_exit"
+            app:popExitAnim="@anim/slide_right_exit"
+            app:popUpTo="@id/homeFragment"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/serviceAndPricing"
+        android:name="com.liordahan.ronilinailandart.features.book_appointment.service_and_pricing.ServiceAndPricingFragment"
+        android:label="ServiceAndPricingFragment"
+        tools:layout="@layout/fragment_service_and_pricing">
+
+        <action
+            android:id="@+id/toDateAndTime"
+            app:destination="@id/dateAndTimeFragment"
+            app:enterAnim="@anim/slide_left_enter"
+            app:exitAnim="@anim/slide_left_exit"
+            app:popEnterAnim="@anim/slide_right_exit"
+            app:popExitAnim="@anim/slide_right_exit"
+            app:popUpTo="@id/serviceAndPricing"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/dateAndTimeFragment"
+        android:name="com.liordahan.ronilinailandart.features.book_appointment.date_and_hour.DateAndHourFragment"
+        android:label="DateAndTimeFragment"
+        tools:layout="@layout/fragment_date_and_hour" />
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home"  />
+
+    <item
+        android:id="@+id/appointment"
+        android:icon="@drawable/baseline_post_add_24"
+        android:title="קביעת תור"  />
+
+    <item
+        android:id="@+id/myAppointments"
+        android:icon="@drawable/ic_baseline_account_circle_24"
+        android:title="התורים שלי" />
+</menu>
